@@ -5,6 +5,7 @@ const express = require('express');
 const crypto = require('crypto');
 const app = express();
 const cors = require('cors');
+const path = require('path');
 
 // Enable CORS for the frontend
 app.use(cors());
