@@ -1,5 +1,7 @@
 let debounceTimer;
 
+const apiBaseUrl = "https://fomos.vercel.app"
+
 document.getElementById("searchBtn").addEventListener("click", (event) => {
     clearTimeout(debounceTimer);
     debounceTimer = setTimeout(() => {
@@ -46,7 +48,7 @@ async function handleSearch(event) {
 }
 
 async function scrapeData(query) {
-    return fetch(`http://localhost:3000/scrape?query=${encodeURIComponent(query)}`)
+    return fetch(`${apiBaseUrl}/scrape?query=${encodeURIComponent(query)}`)
         .then((response) => {
             if (!response.ok) throw new Error("Failed to fetch scraped data");
             return response.json();
@@ -59,7 +61,7 @@ async function scrapeData(query) {
 
 const fetchComparisonData = async (products) => {
     try {
-        const response = await fetch("http://localhost:3000/compare", {
+        const response = await fetch(`${apiBaseUrl}/compare`, {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
