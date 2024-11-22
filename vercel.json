@@ -11,5 +11,10 @@
         "src": "/(.*)",
         "dest": "/api/backend.js"
       }
-    ]
+    ],
+    "functions": {
+          "api/*": {
+            "timeout": 30
+          }
+        }
 }
