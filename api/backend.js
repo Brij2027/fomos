@@ -14,6 +14,9 @@ app.use(express.urlencoded({ extended: true })); // To parse URL-encoded request
 
 app.use(express.static(path.join(__dirname, 'public')));
 
+app.get("/", (req, res) => {
+    res.sendFile(path.join(__dirname, 'public', 'index.html'));
+});
 
 // Normalize titles for comparison
 function normalizeTitle(title) {
