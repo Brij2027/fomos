@@ -11,6 +11,8 @@ app.use(cors());
 app.use(express.json()); // To parse JSON request bodies
 app.use(express.urlencoded({ extended: true })); // To parse URL-encoded request bodies
 
+app.use(express.static(path.join(__dirname, 'public')));
+
 
 // Normalize titles for comparison
 function normalizeTitle(title) {

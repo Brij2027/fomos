@@ -5,5 +5,11 @@
         "src": "api/backend.js",
         "use": "@vercel/node"
       }
+    ],
+    "routes": [
+      {
+        "src": "/(.*)",
+        "dest": "/api/backend.js"
+      }
     ]
-  }
+}
