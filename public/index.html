@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fomos - Price Comparison</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Fomos - Price Comparison</h1>
+        <div class="search-section" id="searchSection">
+            <input type="text" id="searchQuery" placeholder="Search for a product...">
+            <button id="searchBtn" type="button">Search</button>
+        </div>
+        <div id="loadingScreen" class="hidden">Loading...</div>
+        <div id="results" class="hidden">
+            <h2>Results</h2>
+            <div id="resultsContainer"></div>
+            <!-- Go Back button -->
+            <button id="goBackBtn" class="hidden" type="button">Go Back</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

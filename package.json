@@ -1,0 +1,19 @@
+{
+  "dependencies": {
+    "axios": "^1.7.7",
+    "cheerio": "^1.0.0",
+    "cors": "^2.8.5",
+    "crypto": "^1.0.1",
+    "express": "^4.21.1",
+    "image-hash": "^5.3.2",
+    "mime-types": "^2.1.35",
+    "node-image-hash": "^1.1.0",
+    "nodemon": "^3.1.7",
+    "puppeteer": "^23.8.0",
+    "sharp": "^0.33.5",
+    "string-similarity": "^4.0.4"
+  },
+  "scripts": {
+    "dev": "nodemon backend.js"
+  }
+}
